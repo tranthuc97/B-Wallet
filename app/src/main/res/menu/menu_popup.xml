@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/question_1"
+    android:title="What is your favorite food?"
+    />
+    <item android:id="@+id/question_2"
+        android:title="What is the name of your favorite pet?"
+        />
+    <item android:id="@+id/question_3"
+        android:title="What is your mother's name?"
+        />
+    <item android:id="@+id/question_4"
+        android:title="What is the name of your first school?"
+        />
+    <item android:id="@+id/question_5"
+        android:title="What high school did you attend?"
+        />
+    <item android:id="@+id/question_6"
+        android:title="In what city were you born?"
+        />
+</menu>

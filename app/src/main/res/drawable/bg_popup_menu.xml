@@ -1,0 +1,9 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="#171725" /> <!-- Màu nền của TextView -->
+    <corners android:radius="12dp"
+        />
+    <size
+        android:width="328dp"
+        android:height="48dp"
+        />
+</shape>
