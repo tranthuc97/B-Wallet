@@ -6,7 +6,7 @@
     android:id="@+id/fragment_container_security_question"
     android:layout_height="match_parent"
     android:background="@drawable/backgroud_main"
-    tools:context=".app.ui.fragment.SecurityQuestionFragment">
+    tools:context=".app.ui.fragment.old.SecurityQuestionFragment">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"

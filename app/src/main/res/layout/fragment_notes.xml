@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/backgroud_main"
-    tools:context=".app.ui.fragment.NotesFragment">
+    tools:context=".app.ui.fragment.old.NotesFragment">
 
 
     <androidx.constraintlayout.widget.ConstraintLayout

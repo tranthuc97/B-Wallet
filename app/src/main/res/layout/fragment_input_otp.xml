@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:paddingHorizontal="@dimen/_20sdp"
+    android:background="@drawable/bg_background_main"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:src="@drawable/arrow_left"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_height="wrap_content"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:src="@drawable/ic_lock"
+        android:layout_gravity="center"
+        android:padding="@dimen/_15sdp"
+        android:background="@drawable/bg_lock"
+        android:layout_marginTop="@dimen/_36sdp"
+        android:layout_height="wrap_content"
+        tools:ignore="ContentDescription" />
+    
+    <TextView
+        android:text="@string/txt_enter_the_otp_code"
+        android:textSize="@dimen/_18ssp"
+        android:textColor="@color/colorWhite"
+        android:fontFamily="@font/gilroy_medium"
+        android:layout_marginTop="@dimen/_36sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"/>
+
+    <TextView
+        android:text="@string/txt_we_ve_sent_you_an_otp_code_to"
+        android:textSize="@dimen/_13ssp"
+        android:textColor="@color/colorWhite"
+        android:fontFamily="@font/gilroy_regular"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/tvPhoneNumber"
+        android:text="@string/phone_number"
+        android:textSize="@dimen/_16ssp"
+        android:textColor="@color/colorWhite"
+        android:fontFamily="@font/gilroy_bold"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"/>
+
+    <TableRow android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/_56sdp"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/edtOTP1"
+            android:width="0dp"
+            android:layout_weight="1"
+            android:textSize="@dimen/_22ssp"
+            android:padding="@dimen/_10sdp"
+            android:maxLength="1"
+            android:gravity="center"
+            android:layout_marginHorizontal="@dimen/_8sdp"
+            android:inputType="number"
+            android:background="@drawable/bg_edt_input_otp"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/edtOTP2"
+            android:width="0dp"
+            android:layout_weight="1"
+            android:textSize="@dimen/_22ssp"
+            android:padding="@dimen/_10sdp"
+            android:inputType="number"
+            android:maxLength="1"
+            android:gravity="center"
+            android:layout_marginHorizontal="@dimen/_8sdp"
+            android:background="@drawable/bg_edt_input_otp"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/edtOTP3"
+            android:width="0dp"
+            android:maxLength="1"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_marginHorizontal="@dimen/_8sdp"
+            android:textSize="@dimen/_22ssp"
+            android:padding="@dimen/_10sdp"
+            android:inputType="number"
+            android:background="@drawable/bg_edt_input_otp"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/edtOTP4"
+            android:width="0dp"
+            android:maxLength="1"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_marginHorizontal="@dimen/_8sdp"
+            android:textSize="@dimen/_22ssp"
+            android:padding="@dimen/_10sdp"
+            android:inputType="number"
+            android:background="@drawable/bg_edt_input_otp"
+            android:layout_height="wrap_content"/>
+
+    </TableRow>
+
+</LinearLayout>

@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:id="@+id/fragment_container_warning"
     android:background="@drawable/backgroud_main"
-    tools:context=".app.ui.fragment.WarningFragment">
+    tools:context=".app.ui.fragment.old.WarningFragment">
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">

@@ -4,15 +4,14 @@ import android.content.Context
 import android.content.Intent
 import com.apero.inappupdate.AppUpdateManager
 import com.mobiai.R
-import com.mobiai.app.ui.fragment.HomeFragment
-import com.mobiai.app.ui.fragment.NotesFragment
+import com.mobiai.app.ui.fragment.old.HomeFragment
 import com.mobiai.base.basecode.ui.activity.BaseActivity
 import com.mobiai.databinding.ActivityMainBinding
 
 class MainActivity : BaseActivity<ActivityMainBinding>() {
     companion object{
         fun startMain(context: Context, clearTask : Boolean ){
-            val intent = Intent(context, MainActivity::class.java).apply {
+            val intent = Intent(context, SignInActivity::class.java).apply {
                 if(clearTask){
                     addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK)
                     addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)

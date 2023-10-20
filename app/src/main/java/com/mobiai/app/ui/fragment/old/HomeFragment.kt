@@ -1,4 +1,4 @@
-package com.mobiai.app.ui.fragment
+package com.mobiai.app.ui.fragment.old
 
 import android.annotation.SuppressLint
 import android.graphics.Color

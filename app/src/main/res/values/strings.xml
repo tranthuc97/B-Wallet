@@ -1,6 +1,6 @@
 <resources>
-    <string name="app_name">BaseProject</string>
-    <string name="this_action_can_contain_ad">This action can contain ad</string>
+    <string name="app_name">B-Wallet</string>
+    <string name="this_action_can_contain_ad">Your best choice for e-wallet</string>
     <string name="facebook_app_id">1234</string>
     <string name="language_english" translatable="false">English</string>
     <string name="language_spain" translatable="false">Espalier</string>
@@ -33,4 +33,15 @@
     <string name="thapphan">.</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="txt_b_wallet">B-Wallet</string>
+    <string name="txt_sign_in">Sign In</string>
+    <string name="txt_email_phone_number">Email/Phone Number</string>
+    <string name="txt_password">Password</string>
+    <string name="txt_forgot_password">Forgot Password</string>
+    <string name="txt_don_t_have_account_yet">Don’t have account yet?</string>
+    <string name="txt_sign_up">Sign Up</string>
+    <string name="txt_enter_the_otp_code">Enter the OTP code</string>
+    <string name="txt_we_ve_sent_you_an_otp_code_to">We’ve sent you an OTP code to</string>
+    <string name="phone_number">0888888888</string>
+    <string name="txt_the_otp_code_is_invalid">The OTP code is invalid.</string>
 </resources>

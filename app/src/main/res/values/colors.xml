@@ -426,4 +426,10 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorGrey">#DCC9C7</color>
+    <color name="colorAlpha">#00FFFFFF</color>
+    <color name="colorOrange">#FF9900</color>
+    <color name="colorBlur20">#33FFFFFF</color>
+    <color name="colorRed">#FF574B</color>
 </resources>

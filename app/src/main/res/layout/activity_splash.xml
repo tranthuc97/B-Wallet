@@ -4,38 +4,59 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
-    android:padding="@dimen/_20sdp">
+    android:background="@drawable/bg_background_main">
 
     <ImageView
-        android:layout_width="@dimen/_100sdp"
-        android:layout_height="@dimen/_100sdp"
-        android:src="@mipmap/ic_launcher"
-        app:layout_constraintBottom_toTopOf="@id/animationView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_logo"
+        android:background="@drawable/bg_logo_circle_white"
+        android:padding="@dimen/_20sdp"
+        app:layout_constraintBottom_toBottomOf="@id/textView13"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <com.airbnb.lottie.LottieAnimationView
-        android:id="@+id/animationView"
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/_25sdp"
-        android:layout_marginBottom="@dimen/_10sdp"
-        app:layout_constraintBottom_toTopOf="@+id/textView13"
-        app:lottie_autoPlay="true"
-        app:lottie_loop="true"
-        app:lottie_rawRes="@raw/raw" />
+<!--    <com.airbnb.lottie.LottieAnimationView-->
+<!--        android:id="@+id/animationView"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="@dimen/_25sdp"-->
+<!--        android:layout_marginBottom="@dimen/_10sdp"-->
+<!--        app:layout_constraintBottom_toTopOf="@+id/textView13"-->
+<!--        app:lottie_autoPlay="true"-->
+<!--        app:lottie_loop="true"-->
+<!--        app:lottie_rawRes="@raw/raw" />-->
 
     <TextView
         android:id="@+id/textView13"
         style="@style/style_description"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/gilroy_regular"
+        android:textColor="@color/colorWhite"
         android:layout_marginBottom="@dimen/_20sdp"
         android:text="@string/this_action_can_contain_ad"
         android:textSize="@dimen/_12ssp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <ProgressBar
+        android:id="@+id/progressBarHorizontal"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_10sdp"
+        android:layout_alignParentBottom="true"
+        android:gravity="bottom|center"
+        android:indeterminate="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:max="100"
+        android:minHeight="15dp"
+        android:progress="30"
+        android:progressDrawable="@drawable/bg_progressbar"
+        android:theme="@style/CardView.Light"
+        android:visibility="visible"
+        tools:ignore="MissingConstraints" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

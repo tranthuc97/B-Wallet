@@ -1,14 +1,11 @@
-package com.mobiai.app.ui.fragment
+package com.mobiai.app.ui.fragment.old
 
-import android.os.Bundle
 import android.view.LayoutInflater
-import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.viewModels
 import com.mobiai.R
 import com.mobiai.app.viewmodel.QuestionViewModel
 import com.mobiai.base.basecode.ui.fragment.BaseFragment
-import com.mobiai.databinding.FragmentSecurityQuestionBinding
 import com.mobiai.databinding.FragmentSuccessfullyQuestionBinding
 
 

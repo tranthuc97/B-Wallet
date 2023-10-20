@@ -1,19 +1,13 @@
-package com.mobiai.app.ui.fragment
+package com.mobiai.app.ui.fragment.old
 
-import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
-import android.view.View
 import android.view.ViewGroup
 import android.widget.PopupMenu
-import androidx.core.content.ContextCompat
 import androidx.fragment.app.viewModels
 import com.mobiai.R
 import com.mobiai.app.db.question.Question
-import com.mobiai.app.viewmodel.NoteViewModel
 import com.mobiai.app.viewmodel.QuestionViewModel
 import com.mobiai.base.basecode.ui.fragment.BaseFragment
-import com.mobiai.databinding.FragmentNotesBinding
 import com.mobiai.databinding.FragmentSecurityQuestionBinding
 
 class SecurityQuestionFragment : BaseFragment<FragmentSecurityQuestionBinding>() {

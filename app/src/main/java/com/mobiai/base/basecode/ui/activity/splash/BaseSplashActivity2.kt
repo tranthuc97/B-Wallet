@@ -4,8 +4,6 @@ import android.util.Log
 import androidx.viewbinding.ViewBinding
 import com.ads.control.ads.AperoAd
 import com.ads.control.ads.AperoAdCallback
-import com.ads.control.ads.wrapper.ApAdError
-import com.mobiai.BuildConfig
 import com.mobiai.app.ui.activity.SplashActivity
 import com.mobiai.base.basecode.ads.TypeLoadAds
 

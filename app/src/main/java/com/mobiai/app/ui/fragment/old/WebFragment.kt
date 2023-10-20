@@ -1,16 +1,11 @@
-package com.mobiai.app.ui.fragment
+package com.mobiai.app.ui.fragment.old
 
-import android.annotation.SuppressLint
-import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
-import android.view.View
 import android.view.ViewGroup
 import android.webkit.WebView
 import android.webkit.WebViewClient
 import com.mobiai.R
 import com.mobiai.base.basecode.ui.fragment.BaseFragment
-import com.mobiai.databinding.FragmentHomeBinding
 import com.mobiai.databinding.FragmentWebBinding
 
 class WebFragment : BaseFragment<FragmentWebBinding>() {
