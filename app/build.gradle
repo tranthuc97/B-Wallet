@@ -108,6 +108,9 @@ dependencies {
     def lottieVersion = "3.4.0"
     implementation "com.airbnb.android:lottie:$lottieVersion"
 
+    //calendar
+    //implementation 'com.github.prolificinteractive:material-calendarview:2.0'
+
 
     //apero update inapp
     implementation 'apero:in.app.update:1.0.8@aar'

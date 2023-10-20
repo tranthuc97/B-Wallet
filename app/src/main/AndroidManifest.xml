@@ -43,6 +43,7 @@
         </activity>
 
         <activity
+            android:windowSoftInputMode="adjustResize"
             android:name=".app.ui.activity.SignInActivity"
             android:exported="true"
             android:launchMode="singleTask"

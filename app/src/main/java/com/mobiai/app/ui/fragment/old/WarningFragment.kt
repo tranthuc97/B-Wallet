@@ -15,6 +15,7 @@ class WarningFragment : BaseFragment<FragmentWarningBinding>() {
     }
     override fun initView() {
         binding.buttonConfirm.setOnClickListener {
+            addAnimation(binding.buttonConfirm)
             val newFragment = AddFragment()
             val fragmentManager = requireActivity().supportFragmentManager
             val transaction = fragmentManager.beginTransaction()

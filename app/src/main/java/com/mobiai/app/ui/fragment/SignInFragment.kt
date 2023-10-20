@@ -20,10 +20,12 @@ class SignInFragment : BaseFragment<FragmentSignInBinding>(){
 
     override fun initView() {
         binding.tvSignIn.setOnClickListener {
+            addAnimation(binding.tvSignIn)
             addFragment(InputOTPFragment.instance(binding.edtUserName.text.toString()))
         }
 
         binding.ivEye.setOnClickListener {
+            addAnimation(binding.ivEye)
             if(isChecked){
                 binding.edtPassWord.inputType = InputType.TYPE_CLASS_TEXT
                 binding.ivEye.setImageResource(R.drawable.ic_eye_show)
@@ -34,6 +36,12 @@ class SignInFragment : BaseFragment<FragmentSignInBinding>(){
                 isChecked = true
             }
         }
+
+        binding.tvSignUp.setOnClickListener {
+            addAnimation(binding.tvSignIn)
+            replaceFragment(SignUpFragment.instance())
+        }
+
     }
 
     override fun getBinding(

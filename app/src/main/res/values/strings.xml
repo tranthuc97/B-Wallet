@@ -44,4 +44,21 @@
     <string name="txt_we_ve_sent_you_an_otp_code_to">We’ve sent you an OTP code to</string>
     <string name="phone_number">0888888888</string>
     <string name="txt_the_otp_code_is_invalid">The OTP code is invalid.</string>
+    <string name="txt_name">Name</string>
+    <string name="txt_phone_number">Phone Number</string>
+    <string name="txt_email_address">Email Address</string>
+    <string name="txt_birthday">Birthday</string>
+    <string name="txt_already_have_an_account">Already have an account?</string>
+    <string name="txt_set_up_your_pin">Set Up Your PIN</string>
+    <string name="txt_security_code_is_used_to_verify_your_every_transaction_to_be_more_secure">Security code is used to verify your every transaction to be more secure</string>
+    <string name="txt_1">1</string>
+    <string name="txt_2">2</string>
+    <string name="txt_3">3</string>
+    <string name="txt_0">0</string>
+    <string name="txt_9">9</string>
+    <string name="txt_8">8</string>
+    <string name="txt_7">7</string>
+    <string name="txt_4">4</string>
+    <string name="txt_5">5</string>
+    <string name="txt_6">6</string>
 </resources>

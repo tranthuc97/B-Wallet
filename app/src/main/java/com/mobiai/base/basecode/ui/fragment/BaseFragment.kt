@@ -5,7 +5,9 @@ import android.provider.Settings
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.view.animation.AnimationUtils
 import androidx.activity.OnBackPressedCallback
+import androidx.activity.R
 import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
 import androidx.viewbinding.ViewBinding
@@ -65,6 +67,10 @@ abstract class BaseFragment<T : ViewBinding> : Fragment() {
     abstract fun initView()
 
     abstract fun getBinding(inflater: LayoutInflater, container: ViewGroup?): T
+
+    fun addAnimation(view:View){
+        view.startAnimation(AnimationUtils.loadAnimation(requireContext(),android.R.anim.fade_in))
+    }
 
     fun addFragment(fragment: Fragment){
         (requireActivity() as BaseActivity<*>).addFragment(fragment)

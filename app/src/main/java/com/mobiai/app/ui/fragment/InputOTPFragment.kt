@@ -29,6 +29,11 @@ class InputOTPFragment : BaseFragment<FragmentInputOtpBinding>(){
     override fun initView() {
         getData()
         focusOTPEditText()
+
+        binding.ivBack.setOnClickListener {
+            addAnimation(binding.ivBack)
+            closeFragment(this)
+        }
     }
 
     private fun showToastAlert(){

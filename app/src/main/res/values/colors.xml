@@ -432,4 +432,5 @@
     <color name="colorOrange">#FF9900</color>
     <color name="colorBlur20">#33FFFFFF</color>
     <color name="colorRed">#FF574B</color>
+    <color name="colorBlue">#1F6CFF</color>
 </resources>
