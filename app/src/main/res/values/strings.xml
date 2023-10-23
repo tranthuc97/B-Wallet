@@ -61,4 +61,12 @@
     <string name="txt_4">4</string>
     <string name="txt_5">5</string>
     <string name="txt_6">6</string>
+    <string name="txt_the_pin_you_entered_is_wrong">The pin you entered is wrong</string>
+    <string name="txt_set_up_failed_please_try_again_later_or_check_your_connection">Set Up failed, please try again later or check your connection</string>
+    <string name="txt_yay_your_pin_code_has_been_created_continue_to_b_wallet">Yay! Your PIN code has been created. Continue to B-Wallet!</string>
+    <string name="txt_continue">Continue</string>
+    <string name="txt_oke">Oke</string>
+    <string name="txt_enter_your_username_and_password">Enter your UserName and PassWord!</string>
+    <string name="txt_don_t_leave_your_account_or_password_blank">Don\'t leave your account or password blank</string>
+    <string name="txt_don_t_blank">Don\'t blank</string>
 </resources>

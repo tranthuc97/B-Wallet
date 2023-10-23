@@ -4,6 +4,7 @@ import android.app.DatePickerDialog
 import android.text.InputType
 import android.view.LayoutInflater
 import android.view.ViewGroup
+import android.widget.Toast
 import com.mobiai.R
 import com.mobiai.base.basecode.ui.fragment.BaseFragment
 import com.mobiai.databinding.FragmentSignUpBinding
@@ -39,6 +40,17 @@ class SignUpFragment : BaseFragment<FragmentSignUpBinding>() {
         binding.tvSignIn.setOnClickListener {
             addAnimation(binding.tvSignIn)
             replaceFragment(SignInFragment.instance())
+        }
+
+        binding.tvSignUp.setOnClickListener {
+            addAnimation(binding.tvSignUp)
+            if(binding.edtEmailAddress.text.toString().isEmpty() || binding.edtPassWord.text.toString().isEmpty()
+                || binding.edtPhoneNumber.text.toString().isEmpty() || binding.edtUserName.text.toString().isEmpty()
+                || binding.edtCalendar.text.toString().isEmpty()){
+                Toast.makeText(requireContext(), getString(R.string.txt_don_t_blank), Toast.LENGTH_SHORT).show()
+            } else {
+                addFragment(SetupPinFragment.instance())
+            }
         }
     }
 

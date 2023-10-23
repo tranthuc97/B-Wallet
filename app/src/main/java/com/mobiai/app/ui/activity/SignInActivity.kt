@@ -24,6 +24,6 @@ class SignInActivity : BaseActivity<ActivitySignInBinding>() {
     override fun getViewBinding(): ActivitySignInBinding = ActivitySignInBinding.inflate(layoutInflater)
 
     override fun createView() {
-        addFragment(SetupPinFragment.instance())
+        addFragment(SignInFragment.instance())
     }
 }

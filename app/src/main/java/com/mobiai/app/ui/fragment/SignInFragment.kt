@@ -3,7 +3,9 @@ package com.mobiai.app.ui.fragment
 import android.text.InputType
 import android.view.LayoutInflater
 import android.view.ViewGroup
+import android.widget.Toast
 import com.mobiai.R
+import com.mobiai.app.ui.dialog.CheckFailDialog
 import com.mobiai.base.basecode.ui.fragment.BaseFragment
 import com.mobiai.databinding.FragmentSignInBinding
 
@@ -21,7 +23,11 @@ class SignInFragment : BaseFragment<FragmentSignInBinding>(){
     override fun initView() {
         binding.tvSignIn.setOnClickListener {
             addAnimation(binding.tvSignIn)
-            addFragment(InputOTPFragment.instance(binding.edtUserName.text.toString()))
+            if(binding.edtUserName.text.toString().isEmpty() || binding.edtPassWord.text.toString().isEmpty()){
+                Toast.makeText(requireContext(), getString(R.string.txt_don_t_leave_your_account_or_password_blank), Toast.LENGTH_SHORT).show()
+            } else {
+                addFragment(InputOTPFragment.instance(binding.edtUserName.text.toString()))
+            }
         }
 
         binding.ivEye.setOnClickListener {
@@ -41,7 +47,6 @@ class SignInFragment : BaseFragment<FragmentSignInBinding>(){
             addAnimation(binding.tvSignIn)
             replaceFragment(SignUpFragment.instance())
         }
-
     }
 
     override fun getBinding(

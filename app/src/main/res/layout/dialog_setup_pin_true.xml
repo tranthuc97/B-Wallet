@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    app:cardCornerRadius="@dimen/_20sdp"
+    app:cardBackgroundColor="@color/colorWhite"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="center_horizontal"
+        android:padding="@dimen/_20sdp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:padding="@dimen/_20sdp"
+            android:layout_height="wrap_content">
+
+            <View
+                android:id="@+id/vAnimTick"
+                android:layout_width="@dimen/_120sdp"
+                android:background="@drawable/bg_anim_tick_green"
+                android:layout_height="@dimen/_120sdp"/>
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_tick"
+                android:padding="@dimen/_20sdp"
+                android:layout_gravity="center"
+                android:background="@drawable/bg_tick_green"/>
+        </FrameLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:textSize="@dimen/_14ssp"
+            android:textColor="@color/colorBlack"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:text="@string/txt_yay_your_pin_code_has_been_created_continue_to_b_wallet"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tvContinue"
+            android:layout_width="match_parent"
+            android:text="@string/txt_continue"
+            android:gravity="center"
+            android:textSize="@dimen/_14ssp"
+            android:textColor="@color/colorWhite"
+            android:layout_marginHorizontal="@dimen/_36sdp"
+            android:paddingVertical="@dimen/_10sdp"
+            android:background="@drawable/bg_tv_sign_in"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

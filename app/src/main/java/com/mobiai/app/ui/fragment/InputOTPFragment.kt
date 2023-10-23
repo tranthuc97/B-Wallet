@@ -9,7 +9,6 @@ import android.widget.Toast
 import com.mobiai.R
 import com.mobiai.base.basecode.ui.fragment.BaseFragment
 import com.mobiai.databinding.FragmentInputOtpBinding
-import java.util.zip.Inflater
 
 
 class InputOTPFragment : BaseFragment<FragmentInputOtpBinding>(){
@@ -37,7 +36,7 @@ class InputOTPFragment : BaseFragment<FragmentInputOtpBinding>(){
     }
 
     private fun showToastAlert(){
-        val layout = layoutInflater.inflate(R.layout.item_custom_toast_alert, requireActivity().findViewById(R.id.lnAlertToast))
+        val layout = layoutInflater.inflate(R.layout.item_custom_toast_alert_otp, requireActivity().findViewById(R.id.lnAlertToast))
         val toast = Toast(requireContext())
         toast.view = layout
         toast.duration = Toast.LENGTH_SHORT

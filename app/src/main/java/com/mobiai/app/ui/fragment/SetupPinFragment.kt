@@ -4,6 +4,8 @@ import android.util.Log
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import com.mobiai.R
+import com.mobiai.app.ui.dialog.CheckFailDialog
+import com.mobiai.app.ui.dialog.CheckTrueDialog
 import com.mobiai.base.basecode.ui.fragment.BaseFragment
 import com.mobiai.databinding.FragmentSetupPinBinding
 
@@ -143,6 +145,14 @@ class SetupPinFragment : BaseFragment<FragmentSetupPinBinding>() {
             binding.ivDot4.setImageResource(R.drawable.ic_dot_white)
             binding.ivDot5.setImageResource(R.drawable.ic_dot_white)
             binding.ivDot6.setImageResource(R.drawable.ic_dot_white)
+            var dialogCheck = CheckTrueDialog(requireContext())
+            dialogCheck.callback = object : CheckTrueDialog.CallbackTrue{
+                override fun clickContinue() {
+                    dialogCheck.dismiss()
+                }
+            }
+            dialogCheck.show()
+
         }
 
         pin = pin.limitTo(6)    //pin litmit = 6

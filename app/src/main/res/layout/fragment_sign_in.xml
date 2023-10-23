@@ -64,14 +64,14 @@
             <TextView
                 android:layout_width="match_parent"
                 android:textColor="@color/colorGrey"
-                android:text="@string/txt_email_phone_number"
+                android:text="@string/txt_phone_number"
                 android:layout_height="wrap_content"/>
 
             <EditText
                 android:id="@+id/edtUserName"
                 android:layout_width="match_parent"
                 android:textColor="@color/colorBlack"
-                android:inputType="text"
+                android:inputType="number"
                 android:textSize="@dimen/_10ssp"
                 android:fontFamily="@font/gilroy_regular"
                 android:backgroundTint="@color/colorAlpha"

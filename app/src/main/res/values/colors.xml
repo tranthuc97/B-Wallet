@@ -433,4 +433,7 @@
     <color name="colorBlur20">#33FFFFFF</color>
     <color name="colorRed">#FF574B</color>
     <color name="colorBlue">#1F6CFF</color>
+    <color name="colorGreen">#17D85C</color>
+    <color name="colorGreen20">#3317D85C</color>
+    <color name="colorRed20">#33F44336</color>
 </resources>
